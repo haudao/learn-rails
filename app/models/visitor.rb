@@ -10,7 +10,7 @@ class Visitor < ActiveRecord::Base
       email_address: self.email,
       status: "subscribed",
     })
-      Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
+    Rails.logger.info("Subscribed #{self.email} to MailChimp") if result
     end
 
   end
